@@ -9,7 +9,7 @@ services:
       - "3001:3001"
     environment:
       - RUST_LOG=info
-      - DATABASE_URL=postgres://postgres:postgres@db:5432/scispace_understander
+      - DATABASE_URL=postgres://postgres:postgres@db:5432/faang_scispace_understander
     depends_on:
       db:
         condition: service_healthy
@@ -32,7 +32,7 @@ services:
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=scispace_understander
+      - POSTGRES_DB=faang_scispace_understander
     ports:
       - "5432:5432"
     volumes:
